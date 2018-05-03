@@ -1,8 +1,10 @@
+package sbteste.artefato02.testes;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.Test;
 
-import s2bteste.artefato02.Hello;
+import s2bteste.artefato02.code.Hello;
 
 class HelloTest {
 

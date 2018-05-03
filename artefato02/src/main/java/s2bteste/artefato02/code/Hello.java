@@ -1,4 +1,4 @@
-package s2bteste.artefato02;
+package s2bteste.artefato02.code;
 public class Hello {
 	public static void main(String[]args) {			
 		int a = 20;
