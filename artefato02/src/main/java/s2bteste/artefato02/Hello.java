@@ -17,7 +17,6 @@ public class Hello {
 	
 	public static int subtracao(int a, int b) {		
 		return a-b;		
-	}
-	
+	}	
 	
 }
