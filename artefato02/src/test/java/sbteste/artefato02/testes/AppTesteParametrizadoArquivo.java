@@ -11,6 +11,7 @@ import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameter;
 import org.junit.runners.Parameterized.Parameters;
 
+import junitparams.FileParameters;
 import s2bteste.artefato02.code.Hello;
 
 
@@ -27,16 +28,11 @@ public class AppTesteParametrizadoArquivo {
 		});		
 	}
 	
-	@Parameter
-	public int a;
-	@Parameter(1) 
-	public int b;
-	@Parameter(2)
-	public int output;
+	
 			
 	@Test
-	//@FileParameters
-	public void somaTestLista() {
+	@FileParameters("/artefato02/ListasParaTestes/TesteParrametrizadoHelloSoma.csv")
+	public void somaTestListaArquivo(int a, int b, int output) {
 		assertEquals(output, Hello.somar(a, b));				
 	}
 	
