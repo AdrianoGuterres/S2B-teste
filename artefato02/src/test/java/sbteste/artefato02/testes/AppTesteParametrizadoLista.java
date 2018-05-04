@@ -27,7 +27,7 @@ public class AppTesteParametrizadoLista {
 		});		
 	}
 	
-	@Parameter
+	@Parameter(0)
 	public int a;
 	@Parameter(1) 
 	public int b;
