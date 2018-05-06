@@ -17,6 +17,20 @@ public class Hello {
 	
 	public static int subtracao(int a, int b) {		
 		return a-b;		
+	}
+
+	public static long multiplicacao(int a, int b) {
+		
+		return a*b;
+	}
+
+	
+	public static double divisao(double a, double b) {
+		if(b !=0) {
+			return a/b;
+		}else {
+			return 99999;
+		}
 	}	
 	
 }

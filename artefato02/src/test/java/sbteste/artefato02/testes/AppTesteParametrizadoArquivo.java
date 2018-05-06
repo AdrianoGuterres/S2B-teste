@@ -12,13 +12,30 @@ import s2bteste.artefato02.code.Hello;
 @RunWith(JUnitParamsRunner.class)
 public class AppTesteParametrizadoArquivo {	
 	
-		
 	
 			
 	@Test
 	@FileParameters("src/TesteParrametrizadoHelloSoma.csv")
-	public void somaTestListaArquivo(int a, int b, int output) {
+	public void somaTestListaArquivo(int a, int b, int output) {		
 		assertEquals(output, Hello.somar(a, b));				
+	}
+	
+	@Test
+	@FileParameters("src/TesteParrametrizadoHelloSubtracao.csv")
+	public void subtracaoTestListaArquivo(int a, int b, int output) {		
+		assertEquals(output, Hello.subtracao(a, b));				
+	}
+	
+	@Test
+	@FileParameters("src/TesteParrametrizadoHelloProduto.csv")
+	public void multiplicacaoTestListaArquivo(int a, int b, int output) {		
+		assertEquals(output, Hello.multiplicacao(a, b));				
+	}
+	
+	@Test
+	@FileParameters("src/TesteParrametrizadoHelloDivisao.csv")
+	public void divisaoTestListaArquivo(double a, double b, double output) {		
+		assertEquals(output, Hello.divisao(a, b),0.001);				
 	}
 	
 	
