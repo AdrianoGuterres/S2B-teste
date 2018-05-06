@@ -35,7 +35,7 @@ public class AppTesteParametrizadoArquivo {
 	@Test
 	@FileParameters("src/TesteParrametrizadoHelloDivisao.csv")
 	public void divisaoTestListaArquivo(double a, double b, double output) {		
-		assertEquals(output, Hello.divisao(a, b),0.001);				
+		assertEquals(output, Hello.divisao(a, b),0.0001);				
 	}
 	
 	
