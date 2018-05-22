@@ -12,7 +12,6 @@ import s2bteste.artefato02.code.Hello;
 @RunWith(JUnitParamsRunner.class)
 public class AppTesteParametrizadoArquivo {	
 	
-	
 			
 	@Test
 	@FileParameters("src/TesteParrametrizadoHelloSoma.csv")
